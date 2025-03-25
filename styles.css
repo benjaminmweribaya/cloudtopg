@@ -196,7 +196,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; /* To prevent overlap with the fixed header */
+    margin-top: 80px; 
 }
 
 .left {
@@ -326,6 +326,189 @@ p a:hover {
     text-decoration: underline;
 }
 
+/* Services Section */
+.services {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-content {
+    flex: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.services-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.services-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.services-content a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.services-content a:hover {
+    background-color: #0056b3;
+}
+
+.services-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.services-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Business Solutions Section */
+.business-solutions {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.business-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.business-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.business-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.business-content {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+}
+
+.business-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.business-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #2962ff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0039cb;
+}
+
+/* Case Studies Section */
+.case-studies {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.case-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.case-header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.case-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.case-box {
+    text-align: center;
+}
+
+.case-image {
+    width: 220px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Image inside */
+.case-image img {
+    width: 150px;
+    height: auto;
+}
+
+.case-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #000;
+}
+
+.case-box p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+}
+
 /* Testimonials Section */
 .testimonials {
     text-align: center;
@@ -386,7 +569,7 @@ p a:hover {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
     }
 
     .left {
@@ -402,7 +585,7 @@ p a:hover {
       nav ul {
         flex-direction: column;
         align-items: center;
-        display: none; /* Initially hidden for mobile */
+        display: none; 
     }
 
     nav ul.show {
@@ -440,5 +623,39 @@ p a:hover {
     .features-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .services-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .services-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .business-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .business-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .case-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .case-box {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .case-image {
+        width: 100%;
     }
 }
