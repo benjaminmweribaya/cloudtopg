@@ -20,7 +20,7 @@ header {
     padding: 15px 50px;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; 
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -137,7 +137,7 @@ footer {
     color: #fff;
     padding: 40px;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto;
     width: 100%;
 }
 
@@ -196,7 +196,7 @@ footer {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .left {
@@ -566,6 +566,50 @@ p a:hover {
     color: #777;
 }
 
+/* CTA Section */
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("images/cta-background.jpg") center/cover no-repeat; 
+    height: 300px; 
+    position: relative;
+}
+
+.cta-container {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    max-width: 80%;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #FFA500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #FF8C00;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -581,11 +625,11 @@ p a:hover {
         width: 100%;
     }
 
-      /* Responsive Navbar */
-      nav ul {
+    /* Responsive Navbar */
+    nav ul {
         flex-direction: column;
         align-items: center;
-        display: none; 
+        display: none;
     }
 
     nav ul.show {
@@ -614,7 +658,7 @@ p a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .testimonials-container {
         flex-direction: column;
         align-items: center;
@@ -629,7 +673,7 @@ p a:hover {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .services-content {
         text-align: center;
         margin-bottom: 30px;
